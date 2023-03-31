@@ -41,7 +41,7 @@ def Scale_func(file):
 
 #функция Градиента
 def Gradient_func (file):
-    #ввод величин смещения и размера окна
+    #ввод величин смещения
     ksize = 3
     dx = 1
     dy = 1
