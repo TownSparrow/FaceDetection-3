@@ -9,6 +9,12 @@ import operator
 from skimage import io, measure, transform, metrics
 from skimage.measure import block_reduce
 
+#функция Гистограммы
+def Bar_chart_func(file):
+    #вычисление гистограммы
+    histg = cv2.calcHist([file], [0], None, [256], [0, 256])
+    return histg
+
 #функция DFT
 def DFT_func(file):
     # применение DFT (двумерное дискретное преобразование Фурье)
@@ -52,12 +58,6 @@ def Gradient_func (file):
     for i in range(0, len(gradient), 1):
         SumGrad.append(round(sum(gradient[i]) / len(gradient[i]), 1))
     return SumGrad
-
-#функция Гистограммы
-def Bar_chart_func(file):
-    #вычисление гистограммы
-    histg = cv2.calcHist([file], [0], None, [256], [0, 256])
-    return histg
 
 #функция построения графиков
 def Charts_build_func(num_e):
