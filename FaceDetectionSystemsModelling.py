@@ -417,7 +417,7 @@ def Build_Charts_With_Chosen_func(filename1, filename2):
     plt.show()
 
 #построение графиков кросс-валидации по файлу и числу эталонов
-def plot_grafs_choosen_dir(filename, num_e):
+def Build_Charts_With_Chosen_Dir_func(filename, num_e)
     stat_dct = []
     stat_dft = []
     stat_scale = []
