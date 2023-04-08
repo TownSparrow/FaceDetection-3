@@ -417,7 +417,7 @@ def Build_Charts_With_Chosen_func(filename1, filename2):
     plt.show()
 
 #построение графиков кросс-валидации по файлу и числу эталонов
-def Build_Charts_With_Chosen_Dir_func(filename, num_e)
+def Build_Charts_With_Chosen_Dir_func(filename, num_e):
     stat_dct = []
     stat_dft = []
     stat_scale = []
@@ -612,7 +612,7 @@ def Get_eAmount_func(choosed_op):
 def Select_Test_func(e_n, filename1):
     num_etalons = e_n
     if num_etalons.isdigit() and int(num_etalons) > 0:
-        plot_grafs_choosen_dir(filename1, int(num_etalons))
+        Build_Charts_With_Chosen_Dir_func(filename1, int(num_etalons))
     else:
         tk.showerror("Ошибка!", "Должно быть введено целое целое положительное число!")
 
